@@ -26,7 +26,20 @@
     "babel-preset-stage-3": "^6.11.0",
     "tap": "^7.0.1"
   },
-  "keywords": ["now"],
+  "keywords": [
+    "now"
+  ],
   "author": "Remy Sharp",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remy/now-no-alias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/remy/now-no-alias/issues"
+  },
+  "homepage": "https://github.com/remy/now-no-alias#readme"
 }
