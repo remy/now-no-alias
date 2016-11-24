@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const Now = require('now-client');
 
 function main(filter) {
