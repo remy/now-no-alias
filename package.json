@@ -13,17 +13,18 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
+    "babel-runtime": "^6.18.0",
     "now-client": "^0.3.0"
   },
   "devDependencies": {
-    "proxyquire": "^1.7.10",
-    "sinon": "^1.17.5",
     "babel-cli": "^6.14.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.14.0",
-    "babel-runtime": "^6.11.6",
-    "semantic-release": "^4.3.5",
     "babel-preset-stage-3": "^6.11.0",
+    "babel-runtime": "^6.11.6",
+    "proxyquire": "^1.7.10",
+    "semantic-release": "^4.3.5",
+    "sinon": "^1.17.5",
     "tap": "^7.0.1"
   },
   "keywords": [
