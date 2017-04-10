@@ -11,3 +11,12 @@ sD6BY8cWbUWUrznpMHMDG5Ag                 https://loader-rnlmdatsjn.now.sh      5
 > Are you sure? [y/N] y
 > Success! [1s]
 ```
+
+Node use:
+
+```
+const nowNoAlias = require('now-no-alias')
+// optional: you can set your Now token
+// process.env.NOW_TOKEN = 'YOUR_TOKEN'
+nowNoAlias().then(deployments => console.log(deployments))
+```
