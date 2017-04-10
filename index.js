@@ -2,7 +2,7 @@
 const Now = require('now-client');
 
 function main(filter) {
-  const now = Now();
+  const now = Now(process.env.NOW_TOKEN);
 
   return Promise.all([
     now.getAliases(),
