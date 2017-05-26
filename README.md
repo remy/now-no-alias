@@ -15,5 +15,5 @@ sD6BY8cWbUWUrznpMHMDG5Ag                 https://loader-rnlmdatsjn.now.sh      5
 You may optionally provide a `token` to interact with other `now` accounts:
 
 ```bash
-$ now --token=bZ93foNN1hRQDZ26qPRWAqDX
+$ now-no-alias --token=bZ93foNN1hRQDZ26qPRWAqDX
 ```
