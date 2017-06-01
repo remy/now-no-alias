@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-const Now = require('now-client');
+const Now    = require('now-client');
+var minimist = require('minimist');
 
-function main(filter) {
-  const now = Now();
+
+function main(filter, token) {
+  const now = new Now(token);
 
   return Promise.all([
     now.getAliases(),
@@ -21,5 +23,7 @@ function main(filter) {
 module.exports = main;
 
 if (!module.parent) {
-  main(process.argv[2] || null).then(res => console.log(JSON.stringify(res))).catch(e => console.error(e));
+  var argv = minimist(process.argv.slice(2));
+
+  main(argv._[0], argv.token).then(res => console.log(JSON.stringify(res))).catch(e => console.error(e));
 }
